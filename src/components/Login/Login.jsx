@@ -2,7 +2,7 @@ import React from 'react';
 
 const Login = ({rout}) => {
     return (
-        <nav className='mr-20'>
+        <nav className='mr-20  hover:bg-orange-200'>
             <lu>
             <a href= ''>{rout.name}</a>
         

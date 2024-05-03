@@ -29,24 +29,32 @@ const Naver = () => {
         },
     ]
     return (
-        <div className='md:flex'>
+        <nav className=' bg-slate-400  '>
+               <div className='md:flex'>
+                
             <div className='md:hidden'  onClick={()=>setOpen(!open) }>
-                <span>{open === true ?   <Bars3Icon className="size-6 text-blue-500" />: <XMarkIcon className="size-6 text-blue-500" />}</span>
+                <span>
+                    {open === true ? 
+                 
+                  <XMarkIcon className="size-6 text-blue-500" />:
+                  <Bars3Icon className="size-6 text-blue-500" />
+                 }</span>
 
+            </div >
 
-
-            </div>
-
-            
-                {
+            <lu className ={` md:flex absolute md:static duration-300 pl-8 pd-4 bg-slate-400   ${open? 'top-6':'-top-36'}`}>
+            {
                     route.map(rout=><Login
                          key = {rout.id}
                          rout = {rout}
                     ></Login>)
                 }
-            
-            
+
+
+            </lu> 
         </div>
+        </nav>
+      
     );
 };
 
