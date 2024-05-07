@@ -10,14 +10,14 @@
     {
         "id":2,
         "name":" Memnership",
-        "features":["gym sccess", "locker room"]
+        "features":["gym sccess", " room"]
     } ,
 
 
     {
         "id":3,
         "name":"Basi ship",
-        "features":["gym sccess", "locker room"]
+        "features":["gym sccess", "locker "]
     } 
 
 
